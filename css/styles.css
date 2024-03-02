@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .roboto-bold {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+header {
+    color: #ffffff;
+    background-color: #000723;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; /* Alineación del botón hacia la derecha */
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    top: 14%;
+    left: 0;
+    width: 100%;
+    background-color: #000051; /* Color azul para el fondo del menú */
+    border-top: 0.8px solid #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    padding: 10px; /* Espaciado interior */
+    display: block; /* Convertir en bloque para aplicar sombra */
+}
+
+.menu li a:hover {
+    color: #01ecf9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada en hover */
+}
+
+.boton-menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.linea-menu {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 5px 0;
+    transition: transform 0.3s ease;
+}
+
+main {
+    padding: 20px;
+    /*color:#ffffff;*/
+    background-color: #000723;
+}
+
+section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.seccion1 {
+    margin-top: 5%;
+    color: #ffffff;
+}
+
+.seccion1 h1 {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 1.7rem;
+}
+
+.seccion1 p {
+    margin-bottom: 18px;
+}
+
+.boton-seccion1 {
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #01ecf9;
+    color: #000643;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-seccion1:hover {
+    cursor: pointer;
+    background-color: #2cfce4;
+    box-shadow: 0 2px 12px 0 rgba(44, 252, 228, 0.42);
+}
+.image-main {
+    margin-top: -18px;
+}
+
+.pc-image-main {
+    max-width: 100%;
+    height: auto;
+    animation: mover 6s linear infinite; /* Nombre de la animación, duración, tipo de temporización y repetición infinita */
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0); /* Inicio: no hay movimiento vertical */
+    }
+    25% {
+        transform: translateY(-20px); /* Movimiento hacia arriba */
+    }
+    50% {
+        transform: translateX(-20px); /* Movimiento hacia la izquierda */
+    }
+    75% {
+        transform: translateX(20px); /* Movimiento hacia la derecha */
+    }
+    100% {
+        transform: translateY(0); /* Regreso al punto de partida */
+    }
+}
+
+.pc-image-main:hover {
+    cursor: pointer;
+    animation: mover 3s infinite; /* Nombre de la animación, duración y repetición infinita */
+}
+
+
+
+.seccion2 {
+    color: #ffffff;
+}
+
+.ratingimage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.seccion3 {
+    color: #ffffff;
+}
+
+.seccion4 {
+    color: #ffffff;
+}
+
+.seccion4 .image-map {
+    margin-top: 18px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 20px 0 rgba(44, 252, 228, 0.42);
+}
+
+footer {
+    background-color: #000643;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #89daff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
