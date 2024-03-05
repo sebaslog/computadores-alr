@@ -11,3 +11,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sliderWrapper = document.getElementById('sliderWrapper');
+
+    setInterval(() => {
+        sliderWrapper.scrollLeft += sliderWrapper.offsetWidth;
+    }, 4000); // Ajusta el intervalo de tiempo a 4 segundos (4000 milisegundos)
+});

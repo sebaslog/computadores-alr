@@ -6,7 +6,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <title>Servicio de Mantenimiento de computadores ALR</title>
+    <link rel="icon" href="./img/laptop.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.css"> 
 </head>
 <body>
@@ -32,9 +34,11 @@
     
     <main id="main">
         <section class="seccion1">
-            <h1>Servicio de Mantenimiento<br>de Computadores en Funza<br>Revisión Gratuita</h1>
+            <h1>Servicio de Mantenimiento<br>de <span class="subrayado">Computadores</span> en Funza<br>Revisión Gratuita</h1>
             <p>¿Necesitas ayuda con tu computadora?<br>¡Estamos aquí para ayudarte! Chatea con nosotros<br>en WhatsApp con un clic.</p>
-            <button class="boton-seccion1" type="button">Chatear en WhatsApp</button>
+            <a href="https://api.whatsapp.com/send?phone=573134235577&text=&source=&data=&app_absent=" target="_blank">
+                <button class="boton-seccion1" type="button">Chatear en WhatsApp</button>
+            </a>
         </section>
 
         <div class="image-main">
@@ -44,7 +48,21 @@
         <section class="seccion2">
             <h2>¿Listo para experimentar la excelencia en mantenimiento de computadoras?</h2>
             <p>¡Descubre la calidad que nos distingue! Nuestras calificaciones en Google hablan por sí mismas. Cada testimonio positivo nos motiva a superar tus expectativas.</p>
-            <img class="ratingimage" src="./img/computadores-alr-calificaciones-en-google.png" alt="Calificacion cinco estrallas en google del servicio de mantenimiento de computadores">
+              
+            <div class="container">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <div class="slider" id="slider">
+                        <img class="ratingimage" id="slider1" src="./img/computadores-alr-calificaciones-en-google.png" alt="Calificación cinco estrellas en Google del servicio de mantenimiento de computadores">
+                        <img class="ratingimage2" id="slider2" src="./img/computadores-alr-google-reviews.png" alt="Calificación cinco estrellas en Google del servicio de mantenimiento de computadores">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slider1"></a>
+                        <a href="#slider2"></a>
+                    </div>
+                </div>  
+            </div>
+        
+            
         </section>
 
         <section class="seccion3" id="servicios">
