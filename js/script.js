@@ -9,13 +9,42 @@ document.addEventListener('DOMContentLoaded', function() {
         document.querySelectorAll('.linea-menu').forEach(function(linea) {
             linea.classList.toggle('abierto-' + (linea.classList.contains('abierto-1') ? '1' : linea.classList.contains('abierto-2') ? '2' : '3'));
         });
+
+        // Devolver false para indicar que la respuesta es síncrona
+        return false;
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const sliderWrapper = document.getElementById('sliderWrapper');
+// Obtener el contenedor del slider
+const sliderWrapper = document.getElementById('sliderWrapper');
 
-    setInterval(() => {
-        sliderWrapper.scrollLeft += sliderWrapper.offsetWidth;
-    }, 4000); // Ajusta el intervalo de tiempo a 4 segundos (4000 milisegundos)
-});
+// Función para cambiar las imágenes automáticamente
+function changeImage() {
+    // Calcular el ancho total del slider
+    const sliderWidth = sliderWrapper.scrollWidth;
+
+    // Animar el desplazamiento del slider hacia la derecha
+    sliderWrapper.scrollTo({
+        left: sliderWidth,
+        behavior: 'smooth'
+    });
+
+    // Establecer un temporizador para regresar al inicio y repetir el movimiento después de 3 segundos
+    setTimeout(() => {
+        // Animar el desplazamiento del slider hacia el inicio
+        sliderWrapper.scrollTo({
+            left: 0,
+            behavior: 'smooth'
+        });
+
+        // Establecer un temporizador para llamar a esta función nuevamente después de 3 segundos
+        setTimeout(changeImage, 3000);
+    }, 5000);
+}
+
+// Iniciar el cambio automático de imágenes
+changeImage();
+
+
+
+

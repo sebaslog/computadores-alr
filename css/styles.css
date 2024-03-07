@@ -214,14 +214,14 @@ section {
 }
 
 .slider-wrapper {
-    position: relative;
+    position:relative;
     max-width: 27rem;
     margin: 0 auto;
 }
 
 .slider {
     display: flex;
-    overflow-x:auto;
+    overflow-x:hidden;
     column-gap: 0.5rem;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
