@@ -1,35 +1,25 @@
+:root {
+    --darck-blue: #000723;
+    --blue: #000643;
+    --neutral-cian: #01ecf9;
+    --clear-cian: #5bf2fa;
+    --white: #ffffff;
+    --black: #1a1a1a; 
+    --gray: #e1e1e1;
+
+}
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
 
 }
-.roboto-light {
+html {
     font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
+}
   
 body {
-    font-family: 'Roboto', sans-serif;
     width: 100%;
     right: 0;
     left: 0;
@@ -38,7 +28,7 @@ body {
 
 header {
     color: #ffffff;
-    background-color: #000723;
+    background-color: var(--darck-blue);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,7 +55,7 @@ nav {
     top: 14%;
     left: 0;
     width: 100%;
-    background-color: #000051; /* Color azul para el fondo del menú */
+    background-color: #000643; /* Color azul para el fondo del menú */
     border-top: 0.8px solid #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra */
 }
@@ -142,7 +132,7 @@ section {
 
 .subrayado {
     text-decoration: underline;
-    text-decoration-color: #01ecf9; /* Color del subrayado */
+    text-decoration-color: var(--neutral-cian); /* Color del subrayado */
     text-decoration-thickness: 2px; /* Grosor del subrayado */
 }
 
@@ -154,7 +144,7 @@ section {
     font-weight: 700;
     display: inline-block;
     padding: 10px 20px;
-    background-color: #01ecf9;
+    background-color: var(--neutral-cian);
     color: #000643;
     text-decoration: none;
     border-radius: 10px;
@@ -163,7 +153,7 @@ section {
 
 .boton-seccion1:hover {
     cursor: pointer;
-    background-color: #2cfce4;
+    background-color: var(--clear-cian);
     box-shadow: 0 2px 12px 0 rgba(44, 252, 228, 0.42);
 }
 .image-main {
@@ -195,18 +185,25 @@ section {
 }
 
 .seccion2 {
-    color: #ffffff;
-    background-color: #000643;
+    padding-top: 28px;
+    color: var(--darck-blue);
+    background-color: var(--gray);
 }
 
 .seccion2 h2 {
     margin-bottom: 18px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.5rem;
 }
 
 .seccion2 p {
+    padding: 15px;
     margin-bottom: 18px;
+}
+
+.seccion2 p #calidad {
+    color: #000643;
+    font-weight: bold;
 }
 
 .container {
@@ -226,7 +223,7 @@ section {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
-    border-radius: 0.5rem;
+    border-radius: 3rem;
 }
 
 .slider img {
@@ -249,7 +246,7 @@ section {
     width: 0.6rem;
     height: 0.6rem;
     border-radius: 50%;
-    background-color: #000643;
+    background-color: #000723;
     opacity: 0.75;
     transition: opacity ease 250ms;
 }
@@ -270,12 +267,58 @@ section {
     border-radius: 50px;
 }
 
-.seccion3 {
+.service-cards-container {
     color: #ffffff;
+    padding: 15px;
+    margin-top: 27px;
+    display: block;
+}
+
+.service-detail-cards {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    min-height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--blue);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.16);
+}
+
+.service-detail-cards i {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+    
+}
+
+.service-detail-cards h3 {
+    display: block;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+.service-detail-cards p {
+    display: block;
+    text-align: left;
+    color: #d0d0d0;
+}
+
+.info-cards-container {
+    color: var(--white);
+    padding: 15px;
+    margin-top: 27px;
 }
 
 .seccion4 {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .seccion4 .image-map {
