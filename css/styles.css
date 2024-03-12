@@ -312,17 +312,76 @@ section {
 }
 
 .info-cards-container {
-    color: var(--white);
+    color: var(--darck-blue);
+    background-color: var(--gray);
+    padding-top: 42px;
+    padding-bottom: 42px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.info-detail-cards {
     padding: 15px;
-    margin-top: 27px;
+}
+
+.info-image-cards img {
+    max-width: 25%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    display: block; /* Asegura que la imagen se comporte como un bloque */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+    padding-top: 28px;
+    padding-bottom: 20px;
+    
 }
 
 .seccion4 {
     color: var(--white);
 }
 
+.seccion4 {
+    padding: 15px;
+    text-align:center
+}
+
+.seccion4 h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+.seccion4 p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.seccion4 .phone-call-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.phone-call-btn i {
+    margin-right: 5px;
+}
+
+.seccion4 .whatsapp-chat-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.whatsapp-chat-btn i {
+    margin-right: 5px;
+}
+
 .seccion4 .image-map {
-    margin-top: 18px;
+    margin-top: 22px;
     max-width: 100%;
     height: auto;
     box-shadow: 0 2px 20px 0 rgba(44, 252, 228, 0.42);
