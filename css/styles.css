@@ -193,7 +193,7 @@ section {
 .seccion2 h2 {
     margin-bottom: 18px;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .seccion2 p {
@@ -335,27 +335,27 @@ section {
     
 }
 
-.seccion4 {
+.contact-section {
     color: var(--white);
     padding: 15px;
     text-align:center;
     justify-content: center;
 }
 
-.seccion4 h4 {
+.contact-section h4 {
     font-size: 18px;
     margin-bottom: 10px;
 
 }
-.seccion4 p {
+.contact-section p {
     line-height: 1.8;
     margin-bottom: 20px;
 }
 
-.seccion4 .phone-call-btn {
+.contact-section .phone-call-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #005aba;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -365,11 +365,11 @@ section {
     margin-right: 5px;
 }
 
-.seccion4 .whatsapp-chat-btn {
+.contact-section .whatsapp-chat-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--clear-cian);
+    color: var(--darck-blue);
     text-decoration: none;
     border-radius: 5px;
 }
@@ -378,7 +378,17 @@ section {
     margin-right: 5px;
 }
 
-.seccion4 .image-map {
+.separador {
+    margin-top: 40px;
+    height: 1px; /* Altura del separador */
+    background-color: var(--neutral-cian); /* Color del separador */
+}
+
+.contact-map-section {
+    margin-top: 32px;
+}
+
+.contact-section .image-map {
     margin-top: 22px;
     max-width: 100%;
     height: 290px;
