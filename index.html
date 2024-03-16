@@ -35,19 +35,23 @@
     </header>
     
     <main id="main">
-        <section class="seccion1">
-            <h1>Servicio de Mantenimiento<br>de <span class="subrayado">Computadores</span> en Funza<br>Revisión Gratuita</h1>
-            <p>¿Necesitas ayuda con tu computadora?<br>¡Estamos aquí para ayudarte! Chatea con nosotros<br>en WhatsApp con un clic.</p>
-            <a href="https://api.whatsapp.com/send?phone=573134235577&text=&source=&data=&app_absent=" target="_blank">
-                <button class="boton-seccion1" type="button">Chatear en WhatsApp</button>
-            </a>
+        <section class="hero">
+            <div>
+                <h1>Servicio de Mantenimiento<br>de <span class="subrayado">Computadores</span> en Funza<br>Revisión Gratuita</h1>
+                <p>¿Necesitas ayuda con tu computadora?<br>¡Estamos aquí para ayudarte! Chatea con nosotros<br>en WhatsApp con un clic.</p>
+                <a href="https://api.whatsapp.com/send?phone=573134235577&text=&source=&data=&app_absent=" target="_blank">
+                <button class="boton-hero" type="button">Chatear en WhatsApp</button>
+                </a>
+            </div>
+            
+            <div class="image-main">
+                <img class="pc-image-main" src="./img/dibujo-de-hombre-reparando-un-computador.png" alt="dibujo de hombre reparando computador">
+            </div>
         </section>
 
-        <div class="image-main">
-            <img class="pc-image-main" src="./img/dibujo-de-hombre-reparando-un-computador.png" alt="dibujo de hombre reparando computador">
-        </div>
+        
 
-        <section class="seccion2">
+        <section class="raitng-container">
             <h2>Experimenta la excelencia en<br>mantenimiento de computadoras</h2>
             <p>¡Descubre la <span id="calidad">calidad</span> que nos distingue! Nuestras calificaciones en Google hablan por sí mismas. Cada testimonio positivo nos motiva a superar tus expectativas.</p>
               
@@ -68,49 +72,61 @@
         </section>
 
         <section class="service-cards-container" id="servicios">
-            <h2>Nuestros Servicios</h2>
-            <p>Desde problemas de velocidad hasta fallos en el sistema, estamos aquí para solucionarlo todo.</p>
-            <div class="service-detail-cards">
-                <i class="fas fa-tools"></i>
-                <h3>Mantenimiento de computadores</h3>
-                <p>Optimiza el rendimiento de tu computadora con nuestro servicio de mantenimiento especializado. Te garantizamos un rendimiento óptimo y duradero para tus dispositivos.  </p>
+            
+            <div class="service-detail-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Desde problemas de velocidad hasta fallos en el sistema, estamos aquí para solucionarlo todo.</p>
             </div>
-            <div class="service-detail-cards">
-                <i class="fas fa-laptop"></i>
-                <h3>Instalacion de Software</h3>
-                <p>Nos encargamos de instalar, actualizar y configurar el software en tu computadora. Desde sistemas operativos hasta programas especializados.</p>
+            <div id="service-detail">
+                <div class="service-detail-cards">
+                    <i class="fas fa-tools"></i>
+                    <h3>Mantenimiento de computadores</h3>
+                    <p>Optimiza el rendimiento de tu computadora con nuestro servicio de mantenimiento especializado. Te garantizamos un rendimiento óptimo y duradero para tus dispositivos.  </p>
+                </div>
+                <div class="service-detail-cards">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Instalacion de Software</h3>
+                    <p>Nos encargamos de instalar, actualizar y configurar el software en tu computadora. Desde sistemas operativos hasta programas especializados.</p>
+                </div>
+                <div class="service-detail-cards">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Cambio de piezas de computadores</h3>
+                    <p>dale a tu PC el impulso que necesita, podemos reemplazar cualquier componente defectuoso, ya sea el teclado, la pantalla, los periféricos, la memoria RAM o la tarjeta gráfica. Confía en nosotros para devolverle la vida a tu computadora.</p>
+                </div>     
             </div>
-            <div class="service-detail-cards">
-                <i class="fas fa-cogs"></i>
-                <h3>Cambio de piezas de computadores</h3>
-                <p>dale a tu PC el impulso que necesita, podemos reemplazar cualquier componente defectuoso, ya sea el teclado, la pantalla, los periféricos, la memoria RAM o la tarjeta gráfica. Confía en nosotros para devolverle la vida a tu computadora.</p>
-            </div>           
+                  
         </section>
 
         <section class="info-cards-container">
-            <h2>Por qué las personas prefieren nuestro servicio</h2>
-            <div class="info-detail-cards">
-                <div class="info-image-cards">
-                    <img src="./img/computer-scan.png" alt="">
+            <h2>¿Por qué las personas prefieren nuestro servicio?</h2>
+                <div class="info-detail-cards">
+
+                    <div>
+                        <div class="info-image-cards">
+                            <img src="./img/computer-scan.png" alt="">
+                        </div>
+                        <div class="text-info-image">
+                            <h3>Revisión gratuita</h3>
+                            <p>Ofrecemos una revisión sin costo para tu computadora, para que sepas exactamente qué necesita sin compromisos.</p>
+                        </div>
+                    </div>
+                   
+                    <div>
+                        <div class="info-image-cards">
+                            <img src="./img/computer-security.png" alt="">
+                        </div>
+                        <h3>Honestidad y transparencia</h3>
+                        <p>Somos como un libro abierto: honestidad y transparencia son nuestros mejores capítulos. Te garantizamos una evaluación sincera y soluciones claras para tus problemas informáticos.</p>
+                    </div>
+
+                    <div>
+                        <div class="info-image-cards">
+                            <img src="./img/service.png" alt="">
+                        </div>
+                        <h3>servicio profesional</h3>
+                        <p>Como expertos con más de 10 años de experiencia ofrecemos soluciones rápidas y duraderas para mantener tu equipo en óptimas condiciones.</p>
+                    </div>
                 </div>
-                <h3>Revisión gratuita</h3>
-                <p> Ofrecemos una revisión sin costo para tu computadora, para que sepas exactamente qué necesita sin compromisos.</p>
-            </div>
-            <div>
-                <div class="info-image-cards">
-                    <img src="./img/computer-security.png" alt="">
-                </div>
-                <h3>Honestidad y transparencia</h3>
-                <p>Somos como un libro abierto: honestidad y transparencia son nuestros mejores capítulos. Te garantizamos una evaluación sincera y soluciones claras para tus problemas informáticos.</p>
-            </div>
-            <div>
-                <div class="info-image-cards">
-                    <img src="./img/service.png" alt="">
-                </div>
-                <h3>servicio profesional</h3>
-                <p>Como expertos con más de 10 años de experiencia ofrecemos soluciones rápidas y duraderas para mantener tu equipo en óptimas condiciones.</p>
-            </div>
-            
         </section>
 
         <section class="contact-section" id="contacto">

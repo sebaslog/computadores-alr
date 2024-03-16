@@ -44,6 +44,7 @@ nav {
 .logo img {
     width: 100px;
     height: auto;
+    margin-left: 12px;
 }
 
 .menu {
@@ -80,6 +81,7 @@ nav {
 
 .menu li a:hover {
     color: #01ecf9;
+    border-bottom: 0.5px solid var(--white);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra más pronunciada en hover */
 }
 
@@ -118,13 +120,13 @@ section {
     right: 0;
 }
 
-.seccion1 {
+.hero {
     margin-top: 12px;
     color: #ffffff;
 }
 
 
-.seccion1 h1 {
+.hero h1 {
     margin-bottom: 18px;
     font-weight: 500;
     font-size: 1.7rem;
@@ -136,22 +138,22 @@ section {
     text-decoration-thickness: 2px; /* Grosor del subrayado */
 }
 
-.seccion1 p {
+.hero p {
     margin-bottom: 18px;
 }
 
-.boton-seccion1 {
+.boton-hero {
     font-weight: 700;
     display: inline-block;
     padding: 10px 20px;
     background-color: var(--neutral-cian);
-    color: #000643;
+    color: var(--darck-blue);
     text-decoration: none;
     border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
-.boton-seccion1:hover {
+.boton-hero:hover {
     cursor: pointer;
     background-color: var(--clear-cian);
     box-shadow: 0 2px 12px 0 rgba(44, 252, 228, 0.42);
@@ -161,7 +163,7 @@ section {
 }
 
 .pc-image-main {
-    max-width: 100%;
+    max-width: 95%;
     height: auto;
     animation: mover 6s linear infinite; /* Nombre de la animación, duración, tipo de temporización y repetición infinita */
 }
@@ -184,24 +186,24 @@ section {
     }
 }
 
-.seccion2 {
+.raitng-container {
     padding-top: 28px;
     color: var(--darck-blue);
     background-color: var(--gray);
 }
 
-.seccion2 h2 {
+.raitng-container h2 {
     margin-bottom: 18px;
     font-weight: 500;
     font-size: 1.6rem;
 }
 
-.seccion2 p {
+.raitng-container p {
     padding: 15px;
     margin-bottom: 18px;
 }
 
-.seccion2 p #calidad {
+.raitng-container p #calidad {
     color: #000643;
     font-weight: bold;
 }
@@ -274,6 +276,13 @@ section {
     display: block;
 }
 
+.service-detail-title {
+    margin-bottom: 42px;
+}
+.service-detail-title p {
+    color: #d0d0d0;
+}
+
 .service-detail-cards {
     width: 90%;
     min-width: 288px;
@@ -325,14 +334,17 @@ section {
     padding: 15px;
 }
 
-.info-image-cards img {
-    max-width: 25%; /* Ajusta el ancho máximo de la imagen */
-    height: auto;
-    display: block; /* Asegura que la imagen se comporte como un bloque */
+.info-image-cards {
+    width: 170px;
+    height: 170px;
+    padding: 15px;
+    display: block;
     margin: 0 auto; /* Centra la imagen horizontalmente */
-    padding-top: 28px;
-    padding-bottom: 20px;
-    
+}   
+
+.info-image-cards img {
+    width: 100%;
+    height: auto;
 }
 
 .contact-section {
@@ -340,22 +352,26 @@ section {
     padding: 15px;
     text-align:center;
     justify-content: center;
+    margin-top: 12%;
 }
 
-.contact-section h4 {
-    font-size: 18px;
-    margin-bottom: 10px;
+.contact-section h2 {
+    padding-bottom: 22px;
 
 }
 .contact-section p {
     line-height: 1.8;
     margin-bottom: 20px;
 }
+.contact-section a {
+    color: var(--neutral-cian);
+    text-decoration: none;
+}
 
 .contact-section .phone-call-btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #005aba;
+    background-color: #0081eb;
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -363,6 +379,11 @@ section {
 
 .phone-call-btn i {
     margin-right: 5px;
+}
+
+.contact-section .phone-call-btn:hover {
+    background-color: var(--gray);
+    color: var(--darck-blue);
 }
 
 .contact-section .whatsapp-chat-btn {
@@ -378,14 +399,22 @@ section {
     margin-right: 5px;
 }
 
+.contact-section .whatsapp-chat-btn:hover {
+    background-color: var(--gray) ;
+}
+
 .separador {
-    margin-top: 40px;
-    height: 1px; /* Altura del separador */
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 4%;
+    margin-right: 4%;
+    height: 0.70px; /* Altura del separador */
     background-color: var(--neutral-cian); /* Color del separador */
 }
 
 .contact-map-section {
     margin-top: 32px;
+    margin-bottom: 35px;
 }
 
 .contact-section .image-map {
@@ -397,17 +426,121 @@ section {
 }
 
 footer {
-    background-color: #000643;
+    background-color: var(--blue);
     color: #ffffff;
     text-align: center;
     padding: 10px;
 }
 
 footer a {
-    color: #89daff;
+    color: var(--clear-cian);
     text-decoration: none;
 }
 
 footer a:hover {
-    text-decoration: underline;
+    color: #0145ff;
+    text-decoration: none;
+}
+
+/* Media query para pantallas portátiles */
+@media only screen and (min-width: 768px) {
+    /* Cambiar el menú hamburguesa a un menú normal */
+    .menu {
+        list-style: none;
+        display: flex;
+        position: absolute;
+        top: 5%;
+        left: 13%;
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.5); /* Sombra */
+    }
+
+    /* Ocultar el botón del menú hamburguesa */
+    .boton-menu {
+        display: none;
+    }
+
+
+    /* Desplazar la sección1 a la izquierda */
+    .hero {
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 12px;
+    }
+    
+    .hero h1 {
+        margin-bottom: 22px;
+        font-weight: 500;
+        font-size: 2.5rem;
+        text-align: left;
+    }
+    
+    .subrayado {
+        text-decoration: underline;
+        text-decoration-color: var(--neutral-cian); /* Color del subrayado */
+        text-decoration-thickness: 1px; /* Grosor del subrayado */
+        text-decoration-style:wavy;
+    }
+    
+    .hero p {
+        margin-bottom: 32px;
+        font-size: 1.2rem;
+        text-align: left;
+        color: var(--gray);
+    }
+    
+    .boton-hero {
+        display: inline-block;
+        margin-left: -55%;
+        
+    }
+    
+
+
+    /* Alinear los servicios uno al lado del otro */
+    .service-cards-container {
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .service-cards-container h2 {
+        padding-bottom: 12px;
+    }
+
+    #service-detail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;        
+        gap: 10px;
+        
+    }
+
+    /* Alinear las tarjetas de información uno al lado del otro */
+    .info-cards-container {
+        padding-top: 12%;
+        padding-bottom: 12%;
+    }
+
+    .info-cards-container h2 {
+        padding-bottom: 7%;
+    }
+
+    .info-detail-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 22px;
+    }
+}
+
+/* Media query para pantallas de computador */
+@media only screen and (min-width: 1024px) {
+    /* Ajustar estilos adicionales según sea necesario para pantallas de computador */
 }
